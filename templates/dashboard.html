@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, User ID: {{ user_id }}</h1>
+    <h2>Reserve Tickets</h2>
+    <form action="{{ url_for('reserve') }}" method="POST">
+        <input type="text" name="concert_id" placeholder="Concert ID" required>
+        <input type="number" name="seats" placeholder="Number of Seats" required>
+        <button type="submit">Reserve</button>
+    </form>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
