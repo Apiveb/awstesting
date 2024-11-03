@@ -13,10 +13,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # AWS Cognito configuration
-COGNITO_USER_POOL_ID = 'your_user_pool_id'
-COGNITO_APP_CLIENT_ID = 'your_app_client_id'
-COGNITO_DOMAIN = 'your_cognito_domain'  # e.g. 'yourapp.auth.us-east-1.amazoncognito.com'
-REGION = 'your_region'
+COGNITO_USER_POOL_ID = 'us-east-1_K8h4UOTXD'
+COGNITO_APP_CLIENT_ID = 'us-east-1:bc90af9d-28a1-4f7b-bd53-4b3c7fc8a797'
+COGNITO_DOMAIN = 'testing10123.auth.us-east-1.amazoncognito.com'  # e.g. 'yourapp.auth.us-east-1.amazoncognito.com'
+REGION = 'us-east-1'
 
 # Database Model
 class Reservation(db.Model):
